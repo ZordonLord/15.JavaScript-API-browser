@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Случайное изображение с Unsplash</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    img {
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .photographer {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    .like-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .like-count {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+<div id="image-container">
+  <img id="unsplash-image" src="" alt="Случайное изображение">
+  <div class="photographer" id="photographer-name"></div>
+  <button class="like-button" id="like-button">❤️ Лайк</button>
+  <div class="like-count" id="like-count">Лайков: 0</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
